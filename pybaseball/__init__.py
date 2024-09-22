@@ -21,7 +21,8 @@ from .statcast_batter import (
 	statcast_batter_exitvelo_barrels,
 	statcast_batter_expected_stats,
 	statcast_batter_percentile_ranks,
-	statcast_batter_pitch_arsenal
+	statcast_batter_pitch_arsenal,
+    statcast_batter_bat_tracking
 )
 from .statcast_running import statcast_sprint_speed, statcast_running_splits
 from .statcast_fielding import (
@@ -30,7 +31,8 @@ from .statcast_fielding import (
 	statcast_outfield_catch_prob,
 	statcast_outfielder_jump,
 	statcast_catcher_poptime,
-	statcast_catcher_framing
+	statcast_catcher_framing,
+	statcast_fielding_run_value
 )
 from .league_batting_stats import batting_stats_bref
 from .league_batting_stats import batting_stats_range
@@ -96,6 +98,8 @@ from .retrosheet import events
 from .team_game_logs import team_game_logs
 from .plotting import plot_stadium
 from .plotting import spraychart
+from .plotting import plot_teams
+from .plotting import plot_strike_zone
 from .datasources.fangraphs import (fg_batting_data, fg_pitching_data, fg_team_batting_data, fg_team_fielding_data,
                                     fg_team_pitching_data)
 from .split_stats import get_splits
